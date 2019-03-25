@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8630835b-a5ee-406b-88d6-aa9e151e12aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/java/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RoverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/commands/MoveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,33 +23,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5764" />
+          <entry key="java" value="6163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5764" />
+          <entry key="JAVA" value="6163" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+            <state relative-caret-position="256">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/java/commands/MoveTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rover/Rover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="294">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/main/java/rover/commands/TurnRight.java" />
         <option value="$PROJECT_DIR$/src/main/java/rover/parser/CommandListBuilder.java" />
         <option value="$PROJECT_DIR$/test/java/RoverTest.java" />
+        <option value="$PROJECT_DIR$/test/java/commands/MoveTest.java" />
       </list>
     </option>
   </component>
@@ -246,7 +260,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553522447542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553523140219" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -272,7 +286,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoverTest.restrictedToPlateau">
+  <component name="RunManager" selected="JUnit.MoveTest.moveCommandMovesRover">
+    <configuration name="MoveTest.moveCommandMovesRover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="commands" />
+      <option name="MAIN_CLASS_NAME" value="commands.MoveTest" />
+      <option name="METHOD_NAME" value="moveCommandMovesRover" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RoverTest.canRunCommandToMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <option name="PACKAGE_NAME" value="" />
@@ -288,16 +318,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RoverTest" />
       <option name="METHOD_NAME" value="canRunMultiInstructionCommand" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoverTest.canRunTurnLeftCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MarsRoverChallenge" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoverTest" />
-      <option name="METHOD_NAME" value="canRunTurnLeftCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -324,19 +344,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
       <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
       <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
       <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
       <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
+      <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
         <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
         <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
         <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
         <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
-        <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
       </list>
     </recent_temporary>
   </component>
@@ -502,8 +522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rover/Rover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="294">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -512,8 +532,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        <state relative-caret-position="256">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/commands/MoveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
