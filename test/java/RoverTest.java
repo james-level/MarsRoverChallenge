@@ -9,7 +9,7 @@ import rover.environment.Plateau;
 
 public class RoverTest {
 
-
+    //  Tests if rover's current location can be returned as a string
     @Test
     public void statesCurrentLocationAsString() {
         // Given
@@ -24,6 +24,7 @@ public class RoverTest {
 
     }
 
+    // Tests if rover turns left from starting orientation
     @Test
     public void canTurnLeft() {
         // Given
@@ -38,6 +39,7 @@ public class RoverTest {
         Assert.assertEquals("2 4 S", rover.stateCurrentLocation());
     }
 
+    // Tests if rover turns right from starting orientation
     @Test
     public void canTurnRight() {
         // Given
@@ -52,6 +54,7 @@ public class RoverTest {
         Assert.assertEquals("2 4 N", rover.stateCurrentLocation());
     }
 
+    // Tests if rover moves by one unit along current orientation
     @Test
     public void canMove() {
         // Given
@@ -66,6 +69,7 @@ public class RoverTest {
         Assert.assertEquals("2 4 E", rover.stateCurrentLocation());
     }
 
+    // Tests command passed via CommandListBuilder is accepted
     @Test
     public void canRunTurnLeftCommand() {
         // Given
@@ -80,6 +84,7 @@ public class RoverTest {
         Assert.assertEquals("3 2 E", rover.stateCurrentLocation());
     }
 
+    // Tests command passed via CommandListBuilder is accepted
     @Test
     public void canRunTurnRightCommand() {
         // Given
@@ -94,6 +99,7 @@ public class RoverTest {
         Assert.assertEquals("3 2 W", rover.stateCurrentLocation());
     }
 
+    // Tests command passed via CommandListBuilder is accepted
     @Test
     public void canRunCommandToMove() {
         // Given
@@ -108,6 +114,7 @@ public class RoverTest {
         Assert.assertEquals("2 3 W", rover.stateCurrentLocation());
     }
 
+    // Tests rover can accept multiple commands issued at once in string form
     @Test
     public void canRunMultiInstructionCommand() {
         //Given
@@ -122,6 +129,8 @@ public class RoverTest {
         Assert.assertEquals("5 1 E", rover.stateCurrentLocation());
     }
 
+    // Tests rover with input that would take it off plateau. Expected result should show that rover is on outer edge of plateau (i.e.
+    // it cannot go further than the plateau edge)
     @Test
     public void restrictedToPlateau(){
         // Given
