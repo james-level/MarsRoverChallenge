@@ -94,5 +94,19 @@ public class RoverTest {
         Assert.assertEquals("3 2 W", rover.stateCurrentLocation());
     }
 
+    @Test
+    public void canRunCommandToMove(){
+        // Given
+        Plateau plateau = new Plateau(5,5 );
+        Coords startingLocation = new Coords(3, 3);
+        Rover rover = new Rover(plateau, startingLocation, Direction.W);
+
+        // When
+        rover.run("M");
+
+        // Then
+        Assert.assertEquals("2 3 W", rover.stateCurrentLocation());
+    }
+
 
 }
