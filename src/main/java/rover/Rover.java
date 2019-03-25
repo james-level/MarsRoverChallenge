@@ -1,8 +1,11 @@
 package rover;
 
+import rover.commands.ICommand;
 import rover.environment.Coords;
 import rover.environment.Direction;
 import rover.environment.Plateau;
+
+import java.util.List;
 
 public class Rover {
 
@@ -14,6 +17,14 @@ public class Rover {
         this.plateau = plateau;
         this.currentDirection = direction;
         this.currentCoords = coords;
+    }
+
+    // Executes all commands (in sequence) for rover
+    public void run(final String commandString){
+        List<ICommand> roverCommands = new StringCommandParser(commandString).toCommands();
+        for (ICommand command : roverCommands){
+            command.execute(this);
+        }
     }
 
     public String stateCurrentLocation(){

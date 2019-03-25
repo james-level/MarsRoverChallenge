@@ -39,6 +39,20 @@ public class RoverTest {
     }
 
     @Test
+    public void canTurnRight(){
+        // Given
+        Plateau plateau = new Plateau(5, 5);
+        Coords startingLocation = new Coords(2, 4);
+        Rover rover = new Rover(plateau, startingLocation, Direction.W);
+
+        // When
+        rover.turnRight();
+
+        // Then
+        Assert.assertEquals("2 4 N", rover.stateCurrentLocation());
+    }
+
+    @Test
     public void canMove() {
         // Given
         Plateau plateau = new Plateau(5, 5);
@@ -50,6 +64,20 @@ public class RoverTest {
 
         // Then
         Assert.assertEquals("2 4 E", rover.stateCurrentLocation());
+    }
+
+    @Test
+    public void canRunTurnLeftCommand(){
+        // Given
+        Plateau plateau = new Plateau(5,5);
+        Coords startingLocation = new Coords(3, 2);
+        Rover rover = new Rover(plateau, startingLocation, Direction.S);
+
+        // When
+        rover.run("L");
+
+        // Then
+        Assert.assertEquals("3 2 E", rover.stateCurrentLocation());
     }
 
 
