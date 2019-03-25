@@ -1,7 +1,8 @@
 import com.sun.prism.image.Coords;
 import org.junit.Assert;
 import org.junit.Test;
-import static junit.framework.Assert.assertEquals;
+import rover.environment.Plateau;
+
 
 public class RoverTest {
 
