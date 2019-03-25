@@ -19,7 +19,7 @@ public class Coords {
 
     //   Advises if coordinates is off plateau (i.e out-of-bounds)
     public boolean isOutOfBounds(final Coords coords ){
-        return isXCoordOutOfBounds(coords.xCoord) && isYCoordOutOfBounds(coords.yCoord)
+        return isXCoordOutOfBounds(coords.xCoord) && isYCoordOutOfBounds(coords.yCoord);
     }
 
     private boolean isXCoordOutOfBounds(int xCoord) {
@@ -33,7 +33,7 @@ public class Coords {
 
     //   Advises if coordinates is on plateau (i.e within-bounds)
     public boolean isWithinBounds(final Coords coords ){
-        return isXCoordWithinBounds(coords.xCoord) && isYCoordWithinBounds(coords.yCoord)
+        return isXCoordWithinBounds(coords.xCoord) && isYCoordWithinBounds(coords.yCoord);
     }
 
     private boolean isXCoordWithinBounds(int xCoord) {
