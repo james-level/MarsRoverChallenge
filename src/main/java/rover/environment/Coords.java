@@ -53,4 +53,9 @@ public class Coords {
         return yCoord <= this.yCoord;
     }
 
+    // Returns coordinates after movement in direction of current orientation
+    public Coords coordsAfterMove(final int xCoordsStepValue, final int yCoordsStepValue) {
+        return new Coords(xCoord + xCoordsStepValue, yCoordsStepValue + yCoord);
+    }
+
 }
