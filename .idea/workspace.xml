@@ -32,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5056" />
+          <entry key="java" value="5175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5056" />
+          <entry key="JAVA" value="5175" />
         </counts>
       </usages-collector>
     </session>
@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="107" column="67" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
+            <state relative-caret-position="579">
+              <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -246,7 +246,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553521792822" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553522015964" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -272,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoverTest.canRunMultiInstructionCommand">
+  <component name="RunManager" selected="JUnit.RoverTest.restrictedToPlateau">
     <configuration name="RoverTest.canRunCommandToMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <option name="PACKAGE_NAME" value="" />
@@ -313,30 +313,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoverTest.canTurnRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoverTest.restrictedToPlateau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RoverTest" />
-      <option name="METHOD_NAME" value="canTurnRight" />
+      <option name="METHOD_NAME" value="restrictedToPlateau" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoverTest.canTurnRight" />
       <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
       <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
       <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
       <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
+      <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
         <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
         <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
         <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
         <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
-        <item itemvalue="JUnit.RoverTest.canTurnRight" />
       </list>
     </recent_temporary>
   </component>
@@ -354,9 +354,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoverTest_statesCurrentLocationAsString - 2019.03.25 at 11h 54m 07s.xml">
-      <configuration name="RoverTest.statesCurrentLocationAsString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RoverTest_statesCurrentLocationAsString - 2019.03.25 at 11h 57m 22s.xml">
       <configuration name="RoverTest.statesCurrentLocationAsString" configurationId="JUnit" />
     </history-entry>
@@ -380,6 +377,12 @@
     </history-entry>
     <history-entry file="RoverTest_canRunTurnRightCommand - 2019.03.25 at 13h 43m 34s.xml">
       <configuration name="RoverTest.canRunTurnRightCommand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_canRunCommandToMove - 2019.03.25 at 13h 46m 07s.xml">
+      <configuration name="RoverTest.canRunCommandToMove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RoverTest_canRunMultiInstructionCommand - 2019.03.25 at 13h 49m 56s.xml">
+      <configuration name="RoverTest.canRunMultiInstructionCommand" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -509,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="107" column="67" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
+        <state relative-caret-position="579">
+          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

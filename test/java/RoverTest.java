@@ -118,9 +118,21 @@ public class RoverTest {
         //When
         rover.run("MMRMMRMRRM");
 
-        //then
+        // Then
         Assert.assertEquals("5 1 E", rover.stateCurrentLocation());
+    }
 
+    @Test
+    public void restrictedToPlateau(){
+        // Given
+        Plateau plateau = new Plateau(5, 5);
+        Coords startingPosition = new Coords(4, 4);
+        Rover rover = new Rover(plateau, startingPosition, Direction.E);
 
+        // When
+        rover.run("MM");
+
+        // Then
+        Assert.assertEquals("5 4 E", rover.stateCurrentLocation());
     }
 }
