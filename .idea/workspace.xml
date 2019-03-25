@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8630835b-a5ee-406b-88d6-aa9e151e12aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/java/commands/TurnRightTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/environment/PlateauTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="19" />
+          <entry key="java" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6242" />
+          <entry key="java" value="6245" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6242" />
+          <entry key="JAVA" value="6245" />
         </counts>
       </usages-collector>
     </session>
@@ -57,10 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/java/commands/TurnRightTest.java">
+        <entry file="file://$PROJECT_DIR$/test/java/environment/PlateauTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="1140">
+              <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,6 +144,8 @@
         <option value="$PROJECT_DIR$/test/java/RoverTest.java" />
         <option value="$PROJECT_DIR$/test/java/commands/MoveTest.java" />
         <option value="$PROJECT_DIR$/test/java/commands/TurnRightTest.java" />
+        <option value="$PROJECT_DIR$/test/java/commands/TurnLeftTest.java" />
+        <option value="$PROJECT_DIR$/test/java/environment/PlateauTest.java" />
       </list>
     </option>
   </component>
@@ -243,7 +246,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553523688029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553524697953" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -269,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TurnLeftTest.turnLeftTest">
+  <component name="RunManager" selected="JUnit.PlateauTest">
     <configuration name="MoveTest.moveCommandMovesRover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <extension name="coverage">
@@ -286,12 +289,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoverTest.canRunMultiInstructionCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlateauTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoverTest" />
-      <option name="METHOD_NAME" value="canRunMultiInstructionCommand" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="environment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="environment" />
+      <option name="MAIN_CLASS_NAME" value="environment.PlateauTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -339,19 +346,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
       <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
       <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
       <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
       <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
+      <item itemvalue="JUnit.PlateauTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlateauTest" />
         <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
         <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
         <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
         <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
-        <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
       </list>
     </recent_temporary>
   </component>
@@ -369,15 +376,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoverTest_canTurnLeft - 2019.03.25 at 12h 38m 24s.xml">
-      <configuration name="RoverTest.canTurnLeft" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoverTest_canMove - 2019.03.25 at 13h 00m 15s.xml">
-      <configuration name="RoverTest.canMove" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoverTest_canTurnRight - 2019.03.25 at 13h 03m 28s.xml">
-      <configuration name="RoverTest.canTurnRight" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RoverTest_canRunTurnLeftCommand - 2019.03.25 at 13h 43m 14s.xml">
       <configuration name="RoverTest.canRunTurnLeftCommand" configurationId="JUnit" />
     </history-entry>
@@ -399,6 +397,15 @@
     <history-entry file="MoveTest_moveCommandMovesRover - 2019.03.25 at 14h 12m 23s.xml">
       <configuration name="MoveTest.moveCommandMovesRover" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TurnRightTest_roverCanTurnRight - 2019.03.25 at 14h 20m 28s.xml">
+      <configuration name="TurnRightTest.roverCanTurnRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TurnRightTest_roverCanTurnRight - 2019.03.25 at 14h 20m 39s.xml">
+      <configuration name="TurnRightTest.roverCanTurnRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TurnLeftTest_turnLeftTest - 2019.03.25 at 14h 21m 25s.xml">
+      <configuration name="TurnLeftTest.turnLeftTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -409,7 +416,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
@@ -547,8 +554,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/java/commands/TurnRightTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/commands/TurnLeftTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/environment/PlateauTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
