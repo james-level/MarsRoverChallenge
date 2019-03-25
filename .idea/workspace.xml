@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8630835b-a5ee-406b-88d6-aa9e151e12aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/java/environment/DirectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/parser/CommandListBuilderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6246" />
+          <entry key="java" value="6609" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6246" />
+          <entry key="JAVA" value="6609" />
         </counts>
       </usages-collector>
     </session>
@@ -58,10 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/java/environment/DirectionTest.java">
+        <entry file="file://$PROJECT_DIR$/test/java/parser/CommandListBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="474">
+              <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,6 +144,8 @@
         <option value="$PROJECT_DIR$/test/java/environment/PlateauTest.java" />
         <option value="$PROJECT_DIR$/test/java/environment/CoordsTest.java" />
         <option value="$PROJECT_DIR$/test/java/environment/DirectionTest.java" />
+        <option value="$PROJECT_DIR$/test/java/parser/CommentListBuilderTest.java" />
+        <option value="$PROJECT_DIR$/test/java/parser/CommandListBuilderTest.java" />
       </list>
     </option>
   </component>
@@ -243,6 +245,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="environment" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MarsRoverChallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MarsRoverChallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -251,7 +260,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553527201683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553527611839" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -277,7 +286,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DirectionTest">
+  <component name="RunManager" selected="JUnit.CommandListBuilderTest">
+    <configuration name="CommandListBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parser" />
+      <option name="MAIN_CLASS_NAME" value="parser.CommandListBuilderTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DirectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <extension name="coverage">
@@ -288,22 +311,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="environment" />
       <option name="MAIN_CLASS_NAME" value="environment.DirectionTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MoveTest.moveCommandMovesRover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MarsRoverChallenge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="commands" />
-      <option name="MAIN_CLASS_NAME" value="commands.MoveTest" />
-      <option name="METHOD_NAME" value="moveCommandMovesRover" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -355,19 +362,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
       <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
       <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
       <item itemvalue="JUnit.PlateauTest" />
       <item itemvalue="JUnit.DirectionTest" />
+      <item itemvalue="JUnit.CommandListBuilderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandListBuilderTest" />
         <item itemvalue="JUnit.DirectionTest" />
         <item itemvalue="JUnit.PlateauTest" />
         <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
         <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
-        <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
       </list>
     </recent_temporary>
   </component>
@@ -385,9 +392,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoverTest_canRunTurnRightCommand - 2019.03.25 at 13h 43m 18s.xml">
-      <configuration name="RoverTest.canRunTurnRightCommand" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RoverTest_canRunTurnRightCommand - 2019.03.25 at 13h 43m 34s.xml">
       <configuration name="RoverTest.canRunTurnRightCommand" configurationId="JUnit" />
     </history-entry>
@@ -414,6 +418,9 @@
     </history-entry>
     <history-entry file="PlateauTest - 2019.03.25 at 14h 38m 21s.xml">
       <configuration name="PlateauTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DirectionTest - 2019.03.25 at 15h 20m 05s.xml">
+      <configuration name="DirectionTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -521,16 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/java/commands/TurnRightTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -602,8 +599,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/java/environment/DirectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/RoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/parser/CommandListBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
