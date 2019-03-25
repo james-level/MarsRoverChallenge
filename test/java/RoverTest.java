@@ -80,5 +80,19 @@ public class RoverTest {
         Assert.assertEquals("3 2 E", rover.stateCurrentLocation());
     }
 
+    @Test
+    public void canRunTurnRightCommand(){
+        // Given
+        Plateau plateau = new Plateau(5,5);
+        Coords startingLocation = new Coords(3, 2);
+        Rover rover = new Rover(plateau, startingLocation, Direction.S);
+
+        // When
+        rover.run("R");
+
+        // Then
+        Assert.assertEquals("3 2 W", rover.stateCurrentLocation());
+    }
+
 
 }
