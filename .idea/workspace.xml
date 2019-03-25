@@ -243,7 +243,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553523636778" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553523682801" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -269,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TurnRightTest.roverCanTurnRight">
+  <component name="RunManager" selected="JUnit.TurnLeftTest.turnLeftTest">
     <configuration name="MoveTest.moveCommandMovesRover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <extension name="coverage">
@@ -281,16 +281,6 @@
       <option name="PACKAGE_NAME" value="commands" />
       <option name="MAIN_CLASS_NAME" value="commands.MoveTest" />
       <option name="METHOD_NAME" value="moveCommandMovesRover" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoverTest.canRunCommandToMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MarsRoverChallenge" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoverTest" />
-      <option name="METHOD_NAME" value="canRunCommandToMove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -316,6 +306,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TurnLeftTest.turnLeftTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="commands" />
+      <option name="MAIN_CLASS_NAME" value="commands.TurnLeftTest" />
+      <option name="METHOD_NAME" value="turnLeftTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TurnRightTest.roverCanTurnRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <extension name="coverage">
@@ -333,19 +339,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
       <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
       <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
       <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
       <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
+      <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TurnLeftTest.turnLeftTest" />
         <item itemvalue="JUnit.TurnRightTest.roverCanTurnRight" />
         <item itemvalue="JUnit.MoveTest.moveCommandMovesRover" />
         <item itemvalue="JUnit.RoverTest.restrictedToPlateau" />
         <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
-        <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
       </list>
     </recent_temporary>
   </component>
