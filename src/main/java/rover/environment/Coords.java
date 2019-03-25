@@ -11,6 +11,15 @@ public class Coords {
 
     }
 
+    @Override
+    public String toString(){
+        StringBuilder coordinateOutput = new StringBuilder();
+        coordinateOutput.append(xCoord);
+        coordinateOutput.append(" ");
+        coordinateOutput.append(yCoord);
+        return coordinateOutput.toString();
+    }
+
     //   Adds new coordinates for rover
     public Coords newCoordsFor(final int xCoordsStepValue, final int yCoordsStepValue) {
         return new Coords(this.xCoord + xCoordsStepValue, this.yCoord + yCoordsStepValue);
