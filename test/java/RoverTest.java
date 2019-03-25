@@ -24,5 +24,19 @@ public class RoverTest {
 
     }
 
+    @Test
+    public void canTurnLeft() {
+        // Given
+        Plateau plateau = new Plateau(5, 5);
+        Coords startingLocation = new Coords(2, 4);
+        Rover rover = new Rover(plateau, startingLocation, Direction.W);
+
+        // When
+        rover.turnLeft();
+
+        // Then
+        Assert.assertEquals("2 4 S", rover.stateCurrentLocation());
+    }
+
 
 }

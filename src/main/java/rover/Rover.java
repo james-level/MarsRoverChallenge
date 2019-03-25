@@ -19,4 +19,12 @@ public class Rover {
     public String stateCurrentLocation(){
         return currentCoords.toString() + " " + currentDirection.toString();
     }
+
+    public void turnLeft() {
+        this.currentDirection = this.currentDirection.left();
+    }
+
+    public void turnRight() {
+        this.currentDirection = this.currentDirection.right();
+    }
 }
