@@ -246,7 +246,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553521563909" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553521792822" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -272,22 +272,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoverTest.canRunCommandToMove">
-    <configuration name="RoverTest.canMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MarsRoverChallenge" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoverTest" />
-      <option name="METHOD_NAME" value="canMove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RoverTest.canRunMultiInstructionCommand">
     <configuration name="RoverTest.canRunCommandToMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRoverChallenge" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RoverTest" />
       <option name="METHOD_NAME" value="canRunCommandToMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoverTest.canRunMultiInstructionCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MarsRoverChallenge" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoverTest" />
+      <option name="METHOD_NAME" value="canRunMultiInstructionCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -324,19 +324,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoverTest.canMove" />
       <item itemvalue="JUnit.RoverTest.canTurnRight" />
       <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
       <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
       <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
+      <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoverTest.canRunMultiInstructionCommand" />
         <item itemvalue="JUnit.RoverTest.canRunCommandToMove" />
         <item itemvalue="JUnit.RoverTest.canRunTurnRightCommand" />
         <item itemvalue="JUnit.RoverTest.canRunTurnLeftCommand" />
         <item itemvalue="JUnit.RoverTest.canTurnRight" />
-        <item itemvalue="JUnit.RoverTest.canMove" />
       </list>
     </recent_temporary>
   </component>

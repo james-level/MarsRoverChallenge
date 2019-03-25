@@ -13,7 +13,7 @@ public class RoverTest {
     @Test
     public void statesCurrentLocationAsString() {
         // Given
-        Plateau plateau = new Plateau(5,5);
+        Plateau plateau = new Plateau(5, 5);
         Coords startingLocation = new Coords(2, 5);
 
         // When
@@ -39,7 +39,7 @@ public class RoverTest {
     }
 
     @Test
-    public void canTurnRight(){
+    public void canTurnRight() {
         // Given
         Plateau plateau = new Plateau(5, 5);
         Coords startingLocation = new Coords(2, 4);
@@ -67,9 +67,9 @@ public class RoverTest {
     }
 
     @Test
-    public void canRunTurnLeftCommand(){
+    public void canRunTurnLeftCommand() {
         // Given
-        Plateau plateau = new Plateau(5,5);
+        Plateau plateau = new Plateau(5, 5);
         Coords startingLocation = new Coords(3, 2);
         Rover rover = new Rover(plateau, startingLocation, Direction.S);
 
@@ -81,9 +81,9 @@ public class RoverTest {
     }
 
     @Test
-    public void canRunTurnRightCommand(){
+    public void canRunTurnRightCommand() {
         // Given
-        Plateau plateau = new Plateau(5,5);
+        Plateau plateau = new Plateau(5, 5);
         Coords startingLocation = new Coords(3, 2);
         Rover rover = new Rover(plateau, startingLocation, Direction.S);
 
@@ -95,9 +95,9 @@ public class RoverTest {
     }
 
     @Test
-    public void canRunCommandToMove(){
+    public void canRunCommandToMove() {
         // Given
-        Plateau plateau = new Plateau(5,5 );
+        Plateau plateau = new Plateau(5, 5);
         Coords startingLocation = new Coords(3, 3);
         Rover rover = new Rover(plateau, startingLocation, Direction.W);
 
@@ -108,5 +108,19 @@ public class RoverTest {
         Assert.assertEquals("2 3 W", rover.stateCurrentLocation());
     }
 
+    @Test
+    public void canRunMultiInstructionCommand() {
+        //Given
+        Plateau plateau = new Plateau(5, 5);
+        Coords startingPosition = new Coords(3, 3);
+        Rover rover = new Rover(plateau, startingPosition, Direction.E);
 
+        //When
+        rover.run("MMRMMRMRRM");
+
+        //then
+        Assert.assertEquals("5 1 E", rover.stateCurrentLocation());
+
+
+    }
 }
