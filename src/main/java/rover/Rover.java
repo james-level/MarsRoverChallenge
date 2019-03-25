@@ -4,6 +4,7 @@ import rover.commands.ICommand;
 import rover.environment.Coords;
 import rover.environment.Direction;
 import rover.environment.Plateau;
+import rover.parser.CommandListBuilder;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class Rover {
 
     // Executes all commands (in sequence) for rover
     public void run(final String commandString){
-        List<ICommand> roverCommands = new StringCommandParser(commandString).toCommands();
+        List<ICommand> roverCommands = new CommandListBuilder(commandString).toCommands();
         for (ICommand command : roverCommands){
             command.execute(this);
         }
